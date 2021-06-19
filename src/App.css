@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,1)), url('assets/images/money-background.jpg') no-repeat center;
+  background-size: cover;
+  height: 100vh;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.centered-div{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.converter-container{
+  color: white;
+  background: rgba(0,0,0,.9);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 400px;
+  padding: 40px 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.converter-container h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.converter-container p {
+  font-size: 0.5rem;
+  margin-bottom: 15px;
+}
+
+.converter-body {
+  background: white;
+  color: #333333;
+  border-radius: 4px;
+  max-width: 400px;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.equal-to {
+  font-size: 1.35rem;
+}
+
+.input{
+  text-align: right;
 }
